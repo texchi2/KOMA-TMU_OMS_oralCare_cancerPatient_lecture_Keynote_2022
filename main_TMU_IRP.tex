@@ -1,0 +1,309 @@
+\documentclass[addpoints, answers]{exam}
+
+\usepackage{hyperref} 
+\usepackage{CV}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% % for abbreviations, or acronyms %%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[automake, acronym, nopostdot, nohypertypes={acronym,notation}]{glossaries} 
+% manual http://tug.ctan.org/macros/latex/contrib/glossaries/glossariesbegin.html
+%\usepackage[acronym, nopostdot]{glossaries} 
+\makeglossaries %https://tex.stackexchange.com/questions/110095/list-of-acronyms-is-not-displayed
+
+\newacronym{ovh}{OVH}{oral verrucous hyperplasia}
+% electric healthcare records (EHR)
+\newacronym{ehr}{EHR}{electric healthcare records}
+
+\newacronym{ihc}{IHC}{immunohistochemistry}
+
+\newacronym{hnscc}{HNSCC}{head and neck squamous cell carcinoma}
+\newacronym{tcga}{TCGA}{the Cancer Genome Atlas}
+\newacronym{tcia}{TCIA}{the Cancer Imaging Archive}
+\newacronym{tcpa}{TCPA}{the Cancer Proteome Atlas}
+
+\newacronym{cnn}{CNN}{convolutional neural network}
+\newacronym{rnn}{RNN}{recurrent neural network}
+\newacronym{gcnn}{GCNN}{graph convolutional neural network} % or graph convolutional network
+
+\newacronym{rna}{RNA}{ribonucleic acid}
+\newacronym{rnaseq}{RNA-Seq}{RNA sequencing}
+\newacronym{lncrna}{lncRNA}{long non-coding RNA}
+%\newacronym{km}{KM}{Kaplan-Meier}
+\newacronym{rppa}{RPPAs}{reverse-phase protein arrays}
+\newacronym{rpma}{RPMA}{reverse-phase protein lysate microarray}
+
+\newacronym{fdr}{FDR}{false discovery rate}
+
+
+\newacronym{go}{GO}{Gene Ontology}
+\newacronym{ipi}{IPI}{international protein index database}
+
+\newacronym{acta2}{ACTA2}{actin alpha 2, smooth muscle} % or alias as alpha smooth muscle actin,  (α-SMA, SMactin, alpha-SM-actin, ASMA)
+
+\newacronym{mmp}{MMP}{matrix metalloproteinase}
+ %DKK1, CAMK2N1, STC2, PGK1, SURF4, USP10, NDFIP1, FOXA2, STIP1, and DKC1
+ %ZNF557, ZNF266, IL19, MYO1H, FCGBP, LOC148709, EVPLL, PNMA5, KIAA1683, and NPB
+
+\newacronym{DKK1}{DKK1}{dickkopf WNT signaling pathway inhibitor 1} 
+\newacronym{CAMK2N1}{CAMK2N1}{calcium/calmodulin dependent protein kinase II inhibitor 1} 
+\newacronym{STC2}{STC2}{stanniocalcin 2} 
+\newacronym{PGK1}{PGK1}{phosphoglycerate kinase 1} 
+\newacronym{SURF4}{SURF4}{surfeit 4} 
+\newacronym{USP10}{USP10}{ubiquitin specific peptidase 10} 
+\newacronym{NEDD4}{NEDD4}{neural precursor cell expressed, developmentally down-regulated 4}
+\newacronym{NDFIP1}{NDFIP1}{NEDD4 family interacting protein 1} 
+\newacronym{FOXA2}{FOXA2}{forkhead box A2} 
+\newacronym{STIP1}{STIP1}{stress-induced-phosphoprotein 1} 
+\newacronym{DKC1}{DKC1}{dyskeratosis congenita 1, dyskerin} 
+
+\newacronym{ZNF557}{ZNF557}{zinc finger protein 557} 
+\newacronym{ZNF266}{ZNF266}{zinc finger protein 266} 
+\newacronym{IL19}{IL19}{interleukin 19} 
+\newacronym{MYO1H}{MYO1H}{myosin 1H} 
+\newacronym{FCGBP}{FCGBP}{Fc fragment of IgG binding protein} 
+\newacronym{LOC148709}{LOC148709}{LncRNA LOC148709} 
+\newacronym{EVPLL}{EVPLL}{envoplakin-like protein} 
+\newacronym{PNMA5}{PNMA5}{paraneoplastic antigen like 5} 
+%\newacronym{KIAA1683}{KIAA1683}{IQCN, IQ Motif Containing N} 
+\newacronym{IQCN}{IQCN}{IQ motif containing N} % previous name KIAA1683
+% "IQ" refers to the first two amino acids of the motif: isoleucine (commonly) and glutamine (invariably)
+\newacronym{NPB}{NPB}{neuropeptide B} 
+\newacronym{CALML5}{CALML5}{calmodulin like 5}
+
+ \newacronym{rt}{RT}{radiation therapy}
+ \newacronym{nccn}{NCCN}{National Comprehensive Cancer Network}
+ \newacronym{hif}{HIF}{hypoxia-inducible factor}
+ \newacronym{egfr}{EGFR}{epidermal growth factor receptor}
+ \newacronym{ras}{RAS}{rat sarcoma}
+ \newacronym{hras}{HRAS}{Harvey rat sarcoma viral oncoprotein}
+ \newacronym{erk}{ERK}{extracellular signal-regulated kinases}
+ \newacronym{us}{US}{United States}
+ \newacronym{fda}{FDA}{Food and Drug Administration}
+ \newacronym{tpf}{Tax-PF}{docetaxel, cisplatin, and 5-fluorouracil}
+ \newacronym{tki}{TKI}{tyrosine kinase inhibitor}
+ \newacronym{her}{HER}{human epidermal growth factor receptor}
+ \newacronym{ici}{ICI}{immune-checkpoint inhibitor}
+ 
+ 
+ 
+ 
+ %\newacronym{ctla4}{CTLA-4}{cytotoxic T lymphocyte antigen 4}
+ \newacronym{pd1}{PD-1}{programmed death 1}
+ %\newacronym{pdl1}{PD-L1}{programmed death ligand 1}
+ \newacronym{tim3}{TIM-3}{T-cell immunoglobulin mucin protein 3}
+ \newacronym{lag3}{LAG-3}{lymphocyte activation gene 3}
+ \newacronym{ifng}{IFN-$\gamma$}{interferon gamma}
+ \newacronym{tigit}{TIGIT}{T cell immunoglobin and immunoreceptor tyrosine-based inhibitory motif}
+ \newacronym{gitr}{GITR}{glucocorticoid-induced tumor necrosis factor receptor}
+ \newacronym{vista}{VISTA}{V-domain Ig suppressor of T-cell activation}
+ \newacronym{tmsb4x}{TMSB4X}{thymosin beta-4 X-linked}
+ \newacronym{emt}{EMT}{epithelial-mesenchymal-transition}
+ \newacronym{gdc}{GDC}{Genomic Data Commons}
+ \newacronym{nci}{NCI}{the National Cancer Institute}
+ \newacronym{ncbi}{NCBI}{the National Center for Biotechnology Information}
+ \newacronym{gdac}{GDAC}{Genome Data Analysis Center}
+ \newacronym{rest}{REST}{Representational State Transfer} 
+ \newacronym{api}{API}{Application Programmable Interface}
+ \newacronym{degs}{DEGs}{differentially expressed genes}
+ 
+\newacronym{grch38}{GRCh38}{Genome Reference Consortium Homo sapiens genome assembly 38}
+\newacronym{fpkm}{FPKM}{Fragments per kilobase per million reads mapped}
+\newacronym{rsem}{RSEM}{RNA-Seq by Expectation-Maximization}
+\newacronym{slca}{SLC35E2A}{solute carrier family 35 member E2A}
+\newacronym{slcb}{SLC35E2B}{solute carrier family 35 member E2B}
+\newacronym{cde}{CDE}{Common Data Element}
+\newacronym{id}{ID}{identification}
+\newacronym{ajcc}{AJCC}{the American Joint Committee on Cancer}
+\newacronym{uicc}{UICC}{he Union for International Cancer Control}
+\newacronym{tnm}{TNM}{the tumor size (T), cervical lymph node metastases (N), and distal metastasis status (M)}
+\newacronym{ci95}{95\% CI}{95\% confidence interval}
+\newacronym{os}{OS}{overall survival}
+\newacronym{rfs}{RFS}{recurrence-free survival}
+\newacronym{hr}{HR}{hazard ratio}
+\newacronym{hpv}{HPV}{human papillomavirus}
+\newacronym{ene}{ENE}{extra-nodal extension}
+\newacronym{lvsi}{LVSI}{lymph-vascular space invasion}
+\newacronym{pni}{PNI}{perineural invasion}
+\newacronym{doi}{DOI}{depth of invasion}
+\newacronym{lnd}{LND}{lymph node density}
+\newacronym{wpoi5}{WPOI-5}{worst pattern of invasion score 5}
+\newacronym{glut4}{GLUT4}{glucose transporters 4}
+\newacronym{slc2a4}{SLC2A4}{solute carrier family 2 member A4}
+\newacronym{trim24}{TRIM24}{tripartite motif-containing 24}
+\newacronym{til}{TIL}{tumor-infiltrating lymphocytes}
+\newacronym{tmb}{TMB}{tumor mutational burden}
+
+\newacronym{hpa}{HPA}{the Human Protein Atlas}
+% The Health Promotion Administration (HPA) in Taiwan
+\newacronym{Thpa}{Taiwan HPA}{Taiwan Health Promotion Administration}
+\newacronym{cart}{CAR-T}{chimeric antigen receptor T cells}
+
+\newacronym{ptta}{PTTA}{p value of t-test or ANOVA}
+\newacronym{anova}{ANOVA}{analysis of variance}
+\newacronym{lcms}{LC-MS/MS}{liquid chromatography with tandem mass spectrometry}
+\newacronym{maldi}{MALDI MS}{matrix-assisted laser desorption/ionization mass spectrometry}
+\newacronym{maldii}{MALDI IMS}{matrix-assisted laser desorption/ionization imaging mass spectrometry}
+
+\newacronym{pcr}{PCR}{polymerase chain reaction}
+\newacronym{rtpcr}{RT-PCR}{reverse-transcription PCR}
+\newacronym{qpcr}{RT-qPCR}{quantitative real-time reverse-transcription PCR}
+
+\newacronym{tmuh}{TMUH}{Taipei Medical University Hospital}
+\newacronym{tmu}{TMU}{Taipei Medical University}
+
+\newacronym{dag}{DAG}{direct acyclic graph}
+
+%ohm$V3V1V2 disserttion
+\newacronym{cd}{CD}{cluster of differentiation}
+\newacronym{ctla4}{CTLA4}{cytotoxic T-lymphocyte associated protein 4 (CD152)}
+
+\newacronym{icos}{ICOS}{inducible T Cell costimulator}
+\newacronym{hvem}{HVEM}{herpes virus entry mediator}
+\newacronym{btla}{BTLA}{B and T lymphocyte associated (CD272)}
+
+\newacronym{clsm}{CLSM}{confocal laser scanning microscopy}
+\newacronym{dapi}{DAPI}{4’,6-diamidino‐2-phenylindole}
+\newacronym{dc}{DC}{dendritic cell}
+\newacronym{eb}{EB}{Epstein Barr virus}
+\newacronym{ent}{ENT}{ear- nose- and throat,  otorhinolaryngology}
+\newacronym{fas}{Fas}{Fas cell surface death receptor (CD95)} % ligand; Fas -> tumor necrosis factor (TNF) family; 
+\newacronym{fasl}{FasL}{Fas ligand (CD95L or CD178)} % FasL = CD95L or CD178; 
+\newacronym{gphase}{G-phase}{gap phases in mitosis}
+\newacronym{gvhd}{GVHD}{graft versus host disease}
+\newacronym{hiv}{HIV}{human immunodeficiency virus}
+\newacronym{hla}{HLA}{human leukocyte antigen}
+%\newacronym{hpv}{HPV}{human papilloma virus}
+\newacronym{icd}{ICD}{international classification of diseases}
+\newacronym{il}{IL}{interleukin}
+\newacronym{lc}{LC}{langerhans cell}
+\newacronym{lp}{LP}{lichen planus}
+\newacronym{lpl}{LPL}{leukoplakia}
+\newacronym{lpldys}{LPL-dys}{leukoplakia with dysplasia but without malignant transformation}
+\newacronym{lplca}{LPL‐ca}{leukoplakia with dysplasia with malignant transformation}
+\newacronym{mab}{mAb}{monoclonal antibody}
+\newacronym{mdsc}{MDSCs}{myeloid-derived suppressor cells}
+\newacronym{tam}{TAMs}{tumor-associated macrophages}
+\newacronym{caf}{CAFs}{cancer-associated fibroblasts}
+
+\newacronym{mhc}{MHC}{major histocompatibility complex}
+%\newacronym{mmp}{MMP}{matrix metalloproteinases}
+\newacronym{nkg2d}{NKG2D}{natural killer group 2 member D}
+%  MICA MICB is the ligand of NKG2D
+\newacronym{mica}{MICA}{MHC-class-I-polypeptide-related sequence A}
+\newacronym{micb}{MICB}{MHC-class-I-polypeptide-related sequence B}
+
+\newacronym{nsaid}{NSAID}{non-steroidal anti-inflammatory drugs}
+\newacronym{olp}{OLP}{oral lichen planus}
+\newacronym{oscc}{OSCC}{oral squamous cell carcinoma}
+\newacronym{pdl1}{PD‐L1}{programmed death-ligand 1 (CD274)}
+\newacronym{pdl2}{PD‐L2}{programmed death-ligand 2 (CD273)}
+\newacronym{pmod}{PMOD}{potentially malignant oral disorder}
+\newacronym{ptld}{PTLD}{post‐transplant lymphoproliferative disorder}
+\newacronym{pvl}{PVL}{proliferative verrucous leukoplakia}
+\newacronym{sir}{SIR}{standard incidence ratio}
+\newacronym{sot}{SOT}{solid organ transplantation}
+\newacronym{taa}{TAA}{tumor associated antigen}
+%\newacronym{tam}{TAM}{tumor associated macrophage}
+\newacronym{tcr}{TCR}{T cell receptor}
+%\newacronym{til}{TIL}{tumor infiltrating lymphocyte}
+\newacronym{tgf}{TGF}{transforming growth factor}
+\newacronym{th}{Th}{T helper}
+\newacronym{tls}{TLS}{tertiary lymphoid structure}
+%\newacronym{tnm}{TNM}{tumor, node, metastasis classification system}
+\newacronym{trail}{TRAIL}{tumor necrosis factor-related apoptosis‐inducing ligand}
+\newacronym{treg}{Treg}{regulatory T cell}
+
+\newacronym{aldh2}{ALDH2}{aldehyde dehydrogenase 2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[comma,authoryear,square]{natbib} % for Havard style citation; sort
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%This is where you'll edit your class information for each test
+\newcommand{\instructor}{\textbf{}}
+\newcommand{\class}{\textbf{}} %MOST 2022
+\newcommand{\examnum}{\textbf{Subproject Proposal for the Integrated Research Project of Innovative Translational Medicine}}
+\newcommand{\examdate}{}
+\newcommand{\name}{
+\hfill
+\textbf{[SP3] PI Name}: \underline{Wu, Chia-Yu}
+\underline{Chi, Li-Hsing}}
+%\textbf{[SP3] Co-PI Name}: }} % \hspace{3in}
+
+%This is where you can print out your solutions
+
+%\printanswers
+\noprintanswers
+
+\begin{document}
+
+% This is where you change the header of the first page and the running header
+\pagestyle{headandfoot} 
+\firstpageheader{\Large{{\class}}}{\Large{\examnum}}{\instructor}
+\runningheader{\class\ - \examnum}{Page \thepage\ of \numpages}{}
+\runningheadrule
+\runningfooter{Page \thepage\ of \numpages}{}{\hfill{\large{}}}
+	% \textbf{Points earned: \makebox[.5in]{\hrulefill} out of \pointsonpage{\thepage} points}
+		
+\name
+%%%%%%%%%%%%%%	
+\vspace{3em}
+%SP3
+{\large Subproject Title: Deep Learning Platform of Depression Analysis with Holistic Healthcare to Predict Malignant Transformation of Oral Verrucous Hyperplasia}\\
+
+\noindent{\rule{\textwidth}{0.4pt}}
+    
+%This is brief summary of the contents of the exam
+	
+%This exam contains \numpages\ pages (including this cover page) and \numquestions\ questions.  The total number of  possible points is \numpoints.
+According to the National Comprehensive Cancer Network (NCCN) guidelines (Version 3.2021~\citep{Pfister2021}), the current treatment of \acrfull{hnscc} should include of surgery alone, radiation therapy alone, or a combination of the two with adjuvant chemotherapy.
+Despite advancements in these therapies, the five-year survival rate for this disease has only marginally improved over the previous decade, and recurrent disease is seen in up to 50\% of all patients~\citep{Forastiere2001,Warnakulasuriya2009}.
+During 2008 to 2018 in Taiwan, the one-year survival rate for this disease among males is from 79.56\% to 81.62\%~(statistics from Cancer Registry of \acrlong{Thpa}, available at \url{https://cris.hpa.gov.tw/pagepub/Home.aspx}, accessed on August 2021).
+The five-year survival rate for this disease among males ranged from 55.13 percent to 56.03 percent between 2009 and 2014.
+
+Oral verrucous hyperplasia (\acrshort{ovh}) is a premalignant exophytic oral mucosal lesion with a predominantly verrucous or papillary surface; this lesion can subsequently transform into verrucous carcinoma (VC), a well-established warty variant of squamous cell carcinoma (SCC).
+
+Biomarkers of cancer have been utilized for diagnostic, predictive or prognostic purposes. 
+A predictive marker helps to select which specific treatment benefits a better survival.
+For example, adjuvant radiation therapy should be done after tumor-ablative surgery in positive surgical margin or metastatic lymph node from the neck dissection. %; it  to select a particular treatment over another.
+%It guides to determine which further treatment (e.g., ).
+In \acrshort{ovh}, a predictive biomarker gives early alarm of its malignant transformation, which prevents unnecessary biopsy repeatedly.
+%A prognostic marker infers the natural history of disease (survival), which is independent on treatment of choice. Gene-expression based biomarker can indicate a need for further treatment, but does not help to determine which treatment. 
+	
+	
+\begin{minipage}[t]{5.5in}
+\vspace{0pt}
+\begin{itemize}
+        
+% These are the instructions for the class
+\item \textbf{Aim 1}: To establish an OVH cohort in \acrfull{tmu} affiliated hospitals, and collect clinical and pathological images of those lesions.  		
+\item \textbf{Aim 2}. To construct a deep learning platform of \acrshort{tmu} dataset. A deep-learning-based algorithm might extract features of clinical and pathological whole-slide images of \acrshort{ovh} and \acrshort{hnscc}.
+\item \textbf{Aim 3}: Deep Learning-based biomarker identifying in depression analysis with holistic healthcare study. The cortisol is one of the most common objective outcomes studied in psychoneuroimmunological (PNI) factors~\citep{Hulett2016}. Interleukin, cytokines, T-lymphocytes ($CD4^+$, $CD8^+$), $CD56^+$ (neural cell adhesion molecule), and heart rate variability (HRV) are included in other PNI studies.
+The subjective psychosocial measurements should include depression, stress, quality of life, anxiety, fatigue, mindfulness, mood, and specific spiritual growth---the meaning of life~\citep{Hsiao2012}. Our hypothesis is that \acrshort{ovh} could be transformed into oral cancer because of the stress, via mind-brain-body network~\citep{Rogers1959}. Thus, besides using those serum biomarkers, we encourage physicians to write their \acrfull{ehr} in a "holistic way".	And the \acrshort{ovh} carriers should use wearable device (e.g., smart watch) to monitor their HRV. Once the \acrshort{ovh} becoming oral cancer, we could early treat the disease as well as analyze the contributing factors of carcinogenesis. That could be a predictive biomarker.
+%\item \textbf{Simplify all answers as much as possible.} This means that you need to need to combine like terms, reduce fractions, etc. (You do not need to rationalize denominators.)
+	
+\end{itemize}
+
+\vspace{3em}
+\end{minipage}
+
+\printglossary
+%\include{CV}    % cv.tex
+
+\bibliographystyle{agsm.bst} % agsm, IEEEtran
+\bibliography{dissertation2022_Tex.bib}
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hfill
+\begin{minipage}[t]{2in}
+\vspace{0pt}
+\gradetablestretch{2}
+%\vqword{Problem}
+\addpoints	
+\gradetable[v][questions]
+%\gradetable[v][pages]
+\end{minipage}
+
+\newpage
+\addpoints
