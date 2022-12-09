@@ -464,7 +464,7 @@ parskip=half-, % Paragraphs separated by half a line
 \MFUnocap{at}
 \MFUnocap{the}
 % dissertation title: \title{\capitalisewords{global transcriptomics and proteomics analyses for biomarker identification and validation in head and neck squamous cell carcinoma}}
-\newcommand*{\mytitle}{\capitalisewords{PGY Basic---Brief Introduction of Minor Oral Surgery}}
+\newcommand*{\mytitle}{\capitalisewords{Oral management strategies for cancer patients}}
 %English conversation at the Oral and Maxillofacial Surgery Clinic}}
 %\newcommand*{\mytitle}{\capitalisewords{global transcriptomics and proteomics analyses for biomarker identification and validation in head and neck squamous cell carcinoma}}
 %\newcommand*{\mytitle}{Global Proteomics-based Identification and Validation of Thymosin Beta-4 X-Linked as a Prognostic Marker for Head and Neck Squamous Cell Carcinoma} % old Title Transcriptomic Analysis for Prognostic Value in Head and Neck Squamous Cell Carcinoma
@@ -475,7 +475,7 @@ parskip=half-, % Paragraphs separated by half a line
 \newcommand*{\myadvisorM}{Michael Hsiao}
 \newcommand*{\myadvisorJ}{Yu-Chuan (Jack) Li}
 \newcommand*{\myadvisorA}{Alexander TH Wu}
-\newcommand*{\mydate}{2022/04/07} % \today Presentation date {2021/09/10} or {2021/12/10}
+\newcommand*{\mydate}{2022/12/13} % \today Presentation date {2021/09/10} or {2021/12/10}
 \newcommand*{\myuni}{Taipei Medical University} % University or department
 
 \newcommand{\comm}[1]{} % for comment it out; https://tex.stackexchange.com/questions/17816/commenting-out-large-sections
@@ -542,7 +542,7 @@ Contemporary Oral and Maxillofacial Surgery (2019)}
 % {shorturl.at/iqG18}
 %A Holistic Way for Cancer Care
 %\vspace{35mm}
-\hspace{12cm}  \textcolor{white}{November 11, 2022}. %{\mydate} %\par % Date \today
+\hspace{12cm}  \textcolor{white}{December 13, 2022}. %{\mydate} %\par % Date \today
 
 \clearpage
 
@@ -632,7 +632,7 @@ We, the oral and maxillofacial surgeons, are highly qualified professionals who 
 %% 
 \section{Oral management strategies for radiotherapy of head and neck cancer} % 4
 % reference: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7037635/
-
+\autocite{Kawashita2020}
 %\\
 \begin{center} %[H]
     \centering
@@ -652,34 +652,42 @@ We, the oral and maxillofacial surgeons, are highly qualified professionals who 
 %    \captionsetup{labelformat=empty}
 %    \captionof{table}{Let's go over vitals monitoring and treatment plan for a OPD case:}
     % \captionabove{}
-    \includegraphics[width=11cm]{ContemporaryOMS_case祁爺爺.jpeg.001.jpeg}
-    \includegraphics[width=12cm]{ContemporaryOMS_case祁爺爺.jpeg.002.jpeg}
-    \includegraphics[width=12cm]{ContemporaryOMS_case祁爺爺.jpeg.003.jpeg}
+%    \includegraphics[width=11cm]{ContemporaryOMS_case祁爺爺.jpeg.001.jpeg}
+%    \includegraphics[width=12cm]{ContemporaryOMS_case祁爺爺.jpeg.002.jpeg}
+%    \includegraphics[width=12cm]{ContemporaryOMS_case祁爺爺.jpeg.003.jpeg}
     % informed consent form signed by Tex Chi
-    \includegraphics[width=12cm]{ContemporaryOMS_case祁爺爺.jpeg.004.jpeg}
-        \includegraphics[width=12cm]{ContemporaryOMS_case祁爺爺.jpeg.005.jpeg}
+%    \includegraphics[width=12cm]{ContemporaryOMS_case祁爺爺.jpeg.004.jpeg}
+    \includegraphics[width=12cm]{ContemporaryOMS_case祁爺爺.jpeg.005.jpeg}
 \end{center}
 
 
 %\clearpage
 
 %%
+\subsection{Treatment plan for oral cancer}
+
+surgery (tumor excision)
+then radiation therapy
 \subsection{Prior to radiotherapy}
+
+
 \subsubsection{Tooth extraction before the start of radiotherapy to prevent osteoradionecrosis}
 %%
 % - is up text, + is down image
 \wrapr{-1mm}{7}{9cm}{-15mm}
 {% figure
-\includegraphics[width=5.5cm]{p217.pdf}
+\includegraphics[width=5.5cm]{mandible_ORN.jpg}
 %\includegraphics[width=5.5cm]{reduction_mandible.jpeg}
 } % end of figure
 {% text
 \begin{outline}
-\0 (phonetic spelling)
-\1 forceps (FOUR-seps)
-\1 scalpel handle and scalpel (SKAL-pel)
-\1 bone file
-\1 curette (cu-RET)
+\0 prevention of osteoradionecrosis (ORN)
+\1 pathogenesis: hypoxia, hypocellularity, hypovascularity (3H) by dosage of 50 Gy of radiotherapy
+\1 dental infection
+\1 source of infection: 
+    \2 periapical lesion in the molar region of the lower jaw
+    \2 Periodontal diseases (pocket depth > 5mm + furcation invasion)
+\1 remove it at 1-2 weeks before radiotherapy
 \end{outline}
 } % end of text
 %%
@@ -990,9 +998,12 @@ Using dental forceps (= a pair of elevators) \\
 } % end of text
 
 \clearpage
+
+\subsection{Oral fungal infections}
+
+
 %
 \comm{  % we comment it out}
-\subsection{Oral fungal infections}
 
 An example: biopsy for Head and Neck Cancer
 
@@ -1132,7 +1143,7 @@ Oral verrucous hyperplasia (\acrshort{ovh}, vEr-uk-ohs hie-puh-plAY-ziuh) is a p
 
 \comm{
 %%
-\subsection{Oral Surgery Procedures Involved with TMJ Dysfunction}
+%\subsection{Oral Surgery Procedures Involved with TMJ Dysfunction}
 
 
 % - is up text, + is down image
@@ -1154,11 +1165,10 @@ Oral verrucous hyperplasia (\acrshort{ovh}, vEr-uk-ohs hie-puh-plAY-ziuh) is a p
 } % end of text
 
 \clearpage
-} % end of \comm in section HNSCC
 
 
 %%
-\subsection{Surgical Procedures Involved in Dental Implantology}
+%\subsection{Surgical Procedures Involved in Dental Implantology}
 
 % - is up text, + is down image
 \wrapr{-8mm}{7}{6cm}{-1mm}
@@ -1179,7 +1189,7 @@ Oral verrucous hyperplasia (\acrshort{ovh}, vEr-uk-ohs hie-puh-plAY-ziuh) is a p
 
 \clearpage
 %%
-\subsection{Oral Surgery Role in Esthetic Dentistry}
+%\subsection{Oral Surgery Role in Esthetic Dentistry}
 
 
 % - is up text, + is down image
@@ -1202,6 +1212,7 @@ Oral verrucous hyperplasia (\acrshort{ovh}, vEr-uk-ohs hie-puh-plAY-ziuh) is a p
 \clearpage
 
 %
+} % end of \comm in section HNSCC
 
 %%
 %%% Chi2017 %%%%%%%%%%%%%%%
@@ -1209,11 +1220,11 @@ Oral verrucous hyperplasia (\acrshort{ovh}, vEr-uk-ohs hie-puh-plAY-ziuh) is a p
 %%% Chi2021 %%%%%%%%%%%%%%%
 
 
-\subsection*{After radiotherapy} 
+\subsection{After radiotherapy} 
 
-\subsubsection{Salivary Gland Dysfunction and Radiation Caries}
+\subsubsection{Salivary gland dysfunction and radiation caries}
 
-\subsubsection{osteoradionecrosis of jaw bone}
+\subsubsection{Osteoradionecrosis of jaw bone}
 
 \thispagestyle{headings}
 \markright{Conclusion \hfill Holistic cancer care \hfill}
@@ -1452,16 +1463,19 @@ RNA-Seq: \acrlong{rnaseq},
 \label{fig:GCNN}
 \end{figure}
 
+} % end of comm out 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
-\section{Oral management strategies for Chemotherapy and Hematopoietic Stem Cell Transplantation}
+\section{Oral management strategies for chemotherapy and hematopoietic stem cell transplantation}
 % https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9081678/
-
+\autocite{Harris2022, Kawashita2020, Migliorati2022}
 %%%%
-\section{Medication-Related Osteonecrosis of the Jaw (MRONJ)}
+\section{Medication-irelated osteonecrosis of the jaw (MRONJ)}
 \thispagestyle{headings}
 \markright{Results \hfill Holistic Cancer Biomarkers \hfill}
+\autocite{Harris2022, Kawashita2020, Migliorati2022}
 
 \begin{outline}
 \1 Current or previous treatment with bone-modifying agents, such as a bisphosphonate, denosumab, or an antiangiogenic.
@@ -1480,22 +1494,23 @@ RNA-Seq: \acrlong{rnaseq},
 
 \subsubsection{Prevalence of MRONJ}
 
-\subsubsection{What Are the Drugs That Have Been Reported to Be Associated With MRONJ?}
-Antiresorptive and Antiangiogenic Therapy
+\subsubsection{What are the drugs that have been reported to be associated with MRONJ?}
+Antiresorptive and antiangiogenic therapy
 
 
-\subsubsection{Common Signs and Symptoms Associated With MRONJ}
+\subsubsection{Common signs and symptoms associated with MRONJ}
 
-\subsubsection{What Is the Mechanism That Leads to MRONJ?}
+\subsubsection{What is the mechanism that leads to MRONJ?}
 
-\subsubsection{Suggestions of Management Protocols}
+\subsubsection{Suggestions of management protocols}
 
 
 %\subsubsection{}
 %%%%%%%%%%%%%
 
+\comm{ % comm out
 
-\section*{Conclusions} % 5
+%\section*{Conclusions} % 5
 \thispagestyle{headings}
 \markright{Conclusions \hfill Physical care \hfill}
 
@@ -1540,6 +1555,8 @@ Antiresorptive and Antiangiogenic Therapy
 %    \2 confess for not taking care of their bodies and spirits in the past (\hl{causality})
 %    \2 give sincere thanks for their physical body's hard work
 \end{outline}
+
+
 } % end of comment out
 
 %%%%%%%
@@ -1583,14 +1600,16 @@ Antiresorptive and Antiangiogenic Therapy
 %%%%%%%
 
 
-
+\section{Take home message}
 
 
 \section*{Textbook: \\
 Contemporary Oral and Maxillofacial Surgery (2019)
 }
-with 2 citations:
-\cite{Harris2022}, \cite{Kawashita2020}, \cite{Migliorati2022}
+with references:
+\autocite{Harris2022, Kawashita2020, Migliorati2022}
+
+\printbibliography[title={Whole bibliography}]
 %Dental Terminology (version 2021)\\
 %Chapter 14: Oral and Maxillofacial Surgery}
 % references
