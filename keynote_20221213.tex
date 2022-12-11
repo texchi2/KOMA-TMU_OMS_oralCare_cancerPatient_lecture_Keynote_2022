@@ -46,7 +46,7 @@ parskip=half-, % Paragraphs separated by half a line
 \usepackage[backend=bibtex, style=authoryear]{biblatex}
 %\bibliography{TCGA_margin_cutoff.bib, betel.bib, TMSB4X.bib, pvalueTex.bib}
 % ~\autocite{}
-\addbibresource{MRONJ.bib}
+\addbibresource{references.bib} % or MRONJ.bib
 %\addbibresource{TCGA_margin_cutoff}
 %\addbibresource{betel.bib}
 %\addbibresource{TMSB4X.bib}
@@ -629,6 +629,11 @@ We, the oral and maxillofacial surgeons, are highly qualified professionals who 
 \includegraphics[width=13cm]{TAOMS_LOGO.png}
 
 \clearpage
+\autocite{Harris2022}
+\includegraphics[width=0.8\linewidth]{froh-03-874332-g001.jpg}
+Methods of cancer therapy and oral health considerations
+
+
 %% 
 \section{Oral management strategies for radiotherapy of head and neck cancer} % 4
 % reference: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7037635/
@@ -1277,6 +1282,9 @@ Oral verrucous hyperplasia (\acrshort{ovh}, vEr-uk-ohs hie-puh-plAY-ziuh) is a p
 
 \end{outline}
 
+%%%%%%
+\comm{
+
 \thispagestyle{headings}
 \markright{Conclusion \hfill Holistic cancer care \hfill}
 
@@ -1334,7 +1342,7 @@ altering epigenetic control in \hl{gene regulation} %and mRNA/miRNA expression %
 \end{figure}
 \clearpage
 
-%} % end of \comm
+} % end of \comm
 %%%%%%%%%%%%% care
 \comm{ % comment it out
 \begin{figure}[ht]
@@ -1521,17 +1529,52 @@ RNA-Seq: \acrlong{rnaseq},
 \clearpage
 \section{Oral management strategies for chemotherapy and hematopoietic stem cell transplantation}
 % https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9081678/
-\autocite{Harris2022, Kawashita2020, Migliorati2022}
+\autocite{Harris2022}
+\includegraphics[width=0.8\linewidth]{froh-03-874332-g001.jpg}
+Methods of cancer therapy and oral health considerations
+
+\subsection{Chemotherapeutic agents}
+
+\begin{outline}
+    \1 to target on rapidly proliferating cells
+        \2 to halt the growth of cancer cells
+        \2 the basal cells of the mucosal layer
+        \2 the acinar and ductal cells of the salivary glands
+    \1 side effects: oral mucositis, xerostomia, bacterial, viral, and fungal (candidiasis) infections
+\end{outline}
+
+\clearpage
+
+\subsubsection{Hematopoietic stem cell transplantation (HSCT)}
+\begin{outline}
+    \1 for the treatment of various cancers
+    \1 side effects:
+        \2 oral mucositis, xerostomia, fungal (candidiasis) infection
+        \2 herpes simplex virus (HSV) recurrence
+        \2 graft-vs.-host disease (GVHD)
+            \3 "allo-immune" condition caused by donor T-cells attacking on host tissues
+            \3 lichen planus-like,  erythematous, ulcerative oral mucosa
+\end{outline}
+
+\includegraphics[width=0.5\linewidth]{oral chronic gvhd 1.jpg}
+
+GVHD on oral mucosa (image courtesy of AAOM, obtained from \url{https://www.aaom.com} short as \url{shorturl.at/ELST7})
+
+\clearpage
+
 %%%%
 \section{Medication-irelated osteonecrosis of the jaw (MRONJ)}
-\thispagestyle{headings}
-\markright{Results \hfill Holistic Cancer Biomarkers \hfill}
-\autocite{Harris2022, Kawashita2020, Migliorati2022}
+%\thispagestyle{headings}
+%\markright{Results \hfill Holistic Cancer Biomarkers \hfill}
+
+\autocite{Migliorati2022}
 
 \begin{outline}
 \1 Current or previous treatment with bone-modifying agents, such as a bisphosphonate, denosumab, or an antiangiogenic.
 \1 The presence of an exposed necrotic bone or a bone that can be probed through an intraoral or extraoral fistula in the maxillofacial region and that has persisted for longer than 8 weeks.
 \1 No history of radiation therapy to the jaws or obvious metastatic disease to the jaws.
+
+\clearpage
 
 \1 Staging of MRONJ is of importance in the decision-making process on how to manage each of the patients. The staging classification proposed in 2014 by the AAOMS guidelines article established the following staging criteria (updated based on new evidence):
 
@@ -1541,20 +1584,45 @@ RNA-Seq: \acrlong{rnaseq},
     \2 stage 2
     \2 stage 3
 \end{outline}
+
+\includegraphics[width=0.8\linewidth]{froh-03-866871-g0001.jpg}
 \clearpage
 
 \subsubsection{Prevalence of MRONJ}
+\begin{outline}
+    \1 risk: use the medications for cancer $>$ use the medications for osteoporosis
+    \1 the frequency of MRONJ is about 1\% (range, 2–6.7\%) 
+\end{outline}
 
+\clearpage
 \subsubsection{What are the drugs that have been reported to be associated with MRONJ?}
-Antiresorptive and antiangiogenic therapy
 
+\begin{outline}
+    \1 antiresorptive therapy against osteoclast
+    \2 drug categories
+        \3 bisphosphonates: Pamidronate (Aredia®) and zoledronic acid (Zometa®)
+        \3 denosumab
+    \2 therapeutic purposes
+        \3 malignancies that metastasized to bones, such as multiple myeloma, breast, prostate, and lung
+        \3 severe osteoporosis
+    \1 antiangiogenic therapy against cancer
+\end{outline}
 
-\subsubsection{Common signs and symptoms associated with MRONJ}
+\clearpage
 
-\subsubsection{What is the mechanism that leads to MRONJ?}
+%\subsubsection{Common signs and symptoms associated with MRONJ}
+
+%\subsubsection{What is the mechanism that leads to MRONJ?}
 
 \subsubsection{Suggestions of management protocols}
 
+\begin{outline}
+    \1 before drug therapy: dental extractions of hopeless teeth, scaling and root planning, dental restorations, and implement good oral hygiene
+    \1 during drug therapy: periodic follow-up and conservative dental procedure
+    \1 patients with MRONJ: range from minor local debridement to total removal of all necrotic bones with closure by primary intention
+
+    % pentoxifylline and tocopherol (vitamin E) ?
+\end{outline}
 
 %\subsubsection{}
 %%%%%%%%%%%%%
@@ -1610,8 +1678,9 @@ Antiresorptive and antiangiogenic therapy
 
 } % end of comment out
 
+\clearpage
 %%%%%%%
-
+\section{Family Meeting}
 \begin{figure}
     \centering
 \includegraphics[width=11cm]{family_meeting_Cheung202109.jpg}
@@ -1652,8 +1721,15 @@ Antiresorptive and antiangiogenic therapy
 
 
 \section{Take home message}
+\begin{outline}
+    \1 first priority on cancer treatment
+    \1 prevention of oral complication if possible
+    \1 supportive home/professional care on temporary oral uncomfortable
+    \1 long-term management on irreversible side effect
+    \1 keep your patients company for a long time
+\end{outline}
 
-
+\clearpage
 \section*{Textbook: \\
 Contemporary Oral and Maxillofacial Surgery (2019)
 }
