@@ -46,8 +46,8 @@ parskip=half-, % Paragraphs separated by half a line
 \usepackage[backend=bibtex, style=authoryear]{biblatex}
 %\bibliography{TCGA_margin_cutoff.bib, betel.bib, TMSB4X.bib, pvalueTex.bib}
 % ~\autocite{}
-\addbibresource{references.bib} % or MRONJ.bib
-\addbibresource{Xixiu2020.bib}
+\addbibresource{MRONJ.bib} % or MRONJ.bib
+%\addbibresource{Xixiu2020.bib}
 %\addbibresource{TCGA_margin_cutoff}
 %\addbibresource{betel.bib}
 %\addbibresource{TMSB4X.bib}
@@ -683,7 +683,7 @@ then radiation therapy
 % - is up text, + is down image
 \wrapr{-1mm}{7}{9cm}{-15mm}
 {% figure
-\includegraphics[width=5.5cm]{mandible_ORN.jpg}
+\includegraphics[width=7.5cm]{mandible_ORN.jpg}
 %\includegraphics[width=5.5cm]{reduction_mandible.jpeg}
 } % end of figure
 {% text
@@ -692,7 +692,7 @@ then radiation therapy
 \1 pathogenesis: hypoxia, hypocellularity, hypovascularity (3H) by dosage of 50 Gy of radiotherapy
 \1 source of dental infection: 
     \2 periapical lesion in the molar region of the lower jaw
-    \2 Periodontal diseases (pocket depth > 5mm + furcation invasion)
+    \2 periodontal diseases (pocket depth > 5mm + furcation invasion)
 %\1 remove it at 1-2 weeks before radiotherapy
 \end{outline}
 } % end of text
@@ -814,7 +814,9 @@ then radiation therapy
 %https://www.dental-nursing.co.uk/features/dry-mouth-a-review-of-this-common-oral-problem
 \autocite{Ni2020}
 
-\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7739209/}
+Acupuncture produced a significant improvement in patient-reported xerostomia.\autocite{Ni2020}
+%\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7739209/}
+%上肢的合谷穴、尺澤穴，下肢的復溜穴、太谿穴
 \clearpage
 
 \subsubsection{Oral care prevent bacterial infection, or oral candidiasis (fungus) infection}
@@ -865,42 +867,7 @@ Self oral care: brushing, flossing, and the use of mouthwashes several times a d
 %%
 %\subsubsection{}
 
-
-\subsection{Pathogenesis of oral mucositis}
-%Using dental elevator \\
-
-%Using dental forceps (= a pair of elevators) \\
-
-%\clearpage
-\subsubsection{Initiation of tissue injury}
-
-cell damaged by reactive oxygen species (free radicals) \\
-
-free radicals upregulats pro-inflammatory cytokines (tumor necrosis factor-alpha)\\
-
-% secondary bacterial infection 
-%\includegraphics[width=0.5\textwidth]{709_elevators.jpg}
-
-%\includegraphics[width=0.70\textwidth]{31717_forceps.jpg}
-
-%\includegraphics[width=0.40\textwidth]{89944_position_surgeon.jpg}
-
-%\clearpage
-%%
-%\subsubsection{Upregulation of inflammation via generation of messenger signals}
-
-%\subsubsection{Ulceration and inflammation}
-
-\subsubsection{Healing}
- Oral epithelial proliferation \\
- 
- Cellular and tissue differentiation \\
-
- approximately 2–4 weeks since last radiation \\
-\clearpage
-%%
-%\subsection{Clinical course of oral mucositis}
-
+\comm{
 \begin{minipage}[c]{0.45\linewidth}
 
 \begin{outline}
@@ -910,9 +877,10 @@ free radicals upregulats pro-inflammatory cytokines (tumor necrosis factor-alpha
 \1 incision and drainage (I \& D) for odontogenic infection
 \end{outline}
 \end{minipage}
-\begin{minipage}[c]{0.5\linewidth}
 
+%\begin{minipage}[c]{0.5\linewidth}
 
+} % end of \comm
 
 %\begin{outline}
     \begin{tikzpicture}
@@ -925,7 +893,7 @@ free radicals upregulats pro-inflammatory cytokines (tumor necrosis factor-alpha
     \end{tikzpicture}
 
 %\end{outline}
-\end{minipage}
+%\end{minipage}
 
 
 \clearpage
@@ -947,6 +915,8 @@ free radicals upregulats pro-inflammatory cytokines (tumor necrosis factor-alpha
 \clearpage
 %%
 %%
+
+\comm{
 \begin{minipage}[c]{0.6\linewidth}
 
 \begin{outline}
@@ -1027,7 +997,11 @@ free radicals upregulats pro-inflammatory cytokines (tumor necrosis factor-alpha
 \end{outline}
 } % end of text
 
+} % end of \comm
+
 \clearpage
+
+
 %
 %\subsection{Prevention and treatment of oral mucositis}
 
@@ -1039,7 +1013,7 @@ free radicals upregulats pro-inflammatory cytokines (tumor necrosis factor-alpha
 } % end of figure
 {% text
 \begin{outline}
-\1 treatment
+\1 treatment of mandible fracture
     \2 approaching, reduction, fixation, healing
 \1  manner of reduction
     \2 closed fracture reduction
@@ -1268,6 +1242,41 @@ Oral verrucous hyperplasia (\acrshort{ovh}, vEr-uk-ohs hie-puh-plAY-ziuh) is a p
 %%% Chi2017 %%%%%%%%%%%%%%%
 
 %%% Chi2021 %%%%%%%%%%%%%%%
+
+\subsection{Pathogenesis of oral mucositis}
+%Using dental elevator \\
+
+%Using dental forceps (= a pair of elevators) \\
+
+%\clearpage
+\subsubsection{Initiation of tissue injury}
+
+cell damaged by reactive oxygen species (free radicals) \\
+
+free radicals upregulats pro-inflammatory cytokines (tumor necrosis factor-alpha)\\
+
+% secondary bacterial infection 
+%\includegraphics[width=0.5\textwidth]{709_elevators.jpg}
+
+%\includegraphics[width=0.70\textwidth]{31717_forceps.jpg}
+
+%\includegraphics[width=0.40\textwidth]{89944_position_surgeon.jpg}
+
+%\clearpage
+%%
+%\subsubsection{Upregulation of inflammation via generation of messenger signals}
+
+%\subsubsection{Ulceration and inflammation}
+
+\subsubsection{Healing}
+ Oral epithelial proliferation \\
+ 
+ Cellular and tissue differentiation \\
+
+ approximately 2–4 weeks since last radiation \\
+\clearpage
+%%
+%\subsection{Clinical course of oral mucositis}
 
 
 \subsection{After radiotherapy} 
@@ -1542,8 +1551,8 @@ Methods of cancer therapy and oral health considerations
 \begin{outline}
     \1 to target on rapidly proliferating cells
         \2 to halt the growth of cancer cells
-        \2 the basal cells of the mucosal layer
-        \2 the acinar and ductal cells of the salivary glands
+        \2 e.g., the basal cells of the mucosal layer
+        \2 e.g., the acinar and ductal cells of the salivary glands
     \1 side effects: oral mucositis, xerostomia, bacterial, viral, and fungal (candidiasis) infections
 \end{outline}
 
@@ -1604,7 +1613,7 @@ GVHD on oral mucosa (image courtesy of AAOM, obtained from \url{https://www.aaom
 \begin{outline}
     \1 antiresorptive therapy against osteoclast
     \2 drug categories
-        \3 bisphosphonates: Pamidronate (Aredia®) and zoledronic acid (Zometa®)
+        \3 bisphosphonates: Pamidronate (Aredia®) and Zoledronic acid (Zometa®)
         \3 denosumab
     \2 therapeutic purposes
         \3 malignancies that metastasized to bones, such as multiple myeloma, breast, prostate, and lung
@@ -1623,7 +1632,7 @@ GVHD on oral mucosa (image courtesy of AAOM, obtained from \url{https://www.aaom
 \begin{outline}
     \1 before drug therapy: dental extractions of hopeless teeth, scaling and root planning, dental restorations, and implement good oral hygiene
     \1 during drug therapy: periodic follow-up and conservative dental procedure
-    \1 patients with MRONJ: range from minor local debridement to total removal of all necrotic bones with closure by primary intention
+    \1 be patient with those patients with MRONJ: range from minor local debridement to total removal of all necrotic bones with closure by primary intention
 
     % pentoxifylline and tocopherol (vitamin E) ?
 \end{outline}
