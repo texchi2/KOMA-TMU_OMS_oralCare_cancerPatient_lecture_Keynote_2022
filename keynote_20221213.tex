@@ -104,6 +104,21 @@ parskip=half-, % Paragraphs separated by half a line
 \usetikzlibrary{arrows}
 \input{arrowsnew}
 
+%%%%
+% Chinese
+\usepackage{xeCJK} % for Chinese, compiling by XeLaTex
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}  % setting the indentation to be two Chinese characters size.
+\usepackage{fontspec} %設定字體
+% Fandol font (the default)  not shown "內"
+\setCJKmainfont{AR PL UMing TW MBE} % AR PL UMing TW MBE or "UKai" https://www.overleaf.com/learn/latex/Questions/Which_OTF_or_TTF_fonts_are_supported_via_fontspec%3F#Chinese
+%BiauKai} %標楷體 from macOS %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
+%\setCJKmainfont[Vertical=RotatedGlyphs]{AR PL UMing TW MBE}
+
+
+
+
+%%%%
 %\usepackage[]{caption} % bf
 %\newcommand{\bcaption}[2]{\caption{\textbf{#1} #2}}
 %\usepackage{outlines}
@@ -537,7 +552,7 @@ parskip=half-, % Paragraphs separated by half a line
 \textcolor{white}{$\longrightarrow$ 
 Textbook: 
 %"Dental Terminology" \footnotesize{(\url{shorturl.at/hoxN7})\\
-Contemporary Oral and Maxillofacial Surgery (2019)}
+Contemporary Oral and Maxillofacial Surgery (2019 Edition)}
 }
 
 % {shorturl.at/iqG18}
@@ -815,8 +830,14 @@ then radiation therapy
 \autocite{Ni2020}
 
 Acupuncture produced a significant improvement in patient-reported xerostomia.\autocite{Ni2020}
+
 %\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7739209/}
-%上肢的合谷穴、尺澤穴，下肢的復溜穴、太谿穴
+\includegraphics[width=0.4\linewidth]{IMG_2364.jpg}
+\includegraphics[width=0.4\linewidth]{IMG_2365.jpg}
+
+刺激口水分泌之穴道：上肢的合谷穴、尺澤穴，下肢的復溜穴、太谿穴(明報製圖)
+
+
 \clearpage
 
 \subsubsection{Oral care prevent bacterial infection, or oral candidiasis (fungus) infection}
